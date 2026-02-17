@@ -118,27 +118,104 @@ main img{
      grid-area: texto2;
 }
 
-/* cards galeria */
+/* galeria */
 
-.card, .card2, .card3 {
+.galeria{
+     padding: 40px 30px;
+}
+.card {
   background-color: white;
   border-radius: 15px;
   overflow: hidden; /* para que la imagen no sobresalga */
-  max-width: 480px;
+  max-width: 450px;
 }
 
 .cards {
   display: flex;
-  gap: 20px;          /* espacio entre cards */
-  padding: 30px;      /* espacio con el borde de la página */
+  gap: 20px;    
+  padding: 30px;    
 }
 
-.card-body1,
-.card-body2,
-.card-body3 {
+.card-body {
   padding: 15px;
 }
 
+/*acerca de*/
+
+.acerca-section{
+      background-color: #a5a58d;
+      padding: 80px 100px;
+       min-height: 100vh;
+}
+.acerca-section h1{
+     font-size: 60px;
+     margin-bottom: 30px;
+}
+.acerca-contenido{
+      max-width: 900px;
+      font-size: 18px;
+      margin-bottom: 60px;
+}
+.acerca-cards{
+     display: flex;
+     gap: 30px;
+     flex-wrap: wrap;
+}
+.acerca-card{
+      background: white;
+      padding: 25px;
+       width: 250px;
+}
+.acerca-card h3{
+     margin-bottom: 10px;
+      font-size: 20px;
+}
+
+/* musica */
+
+.musica{
+     background-color: #a5a58d;
+     padding: 80px 100px;
+     min-height: 100vh;
+}
+.musica h1{
+     font-size: 60px;
+     margin-bottom: 15px;
+}
+.musica p{
+     font-size: 18px;
+     max-width: 800px;
+     margin-bottom: 50px;
+}
+.spotify{
+      background: white;
+      padding: 30px;
+      border-radius: 25px;
+       margin-bottom: 60px;
+}
+.video{
+      background: white;
+      padding: 30px;
+      border-radius: 25px;
+       margin-bottom: 60px;
+}
+.spotify h2{
+     margin-bottom: 20px;
+}
+.video h2{
+     margin-bottom: 20px;
+}
+.video-grid{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 20px;
+}
+.video-grid iframe{
+      width: 100%;
+      height: 200px;
+      border-radius: 15px;
+      border: none;
+}
 
 /* footer */
 footer{
@@ -165,8 +242,14 @@ footer img{
           justify-content: center;
           align-items: center;
      }
+
+     /*index*/
+
      nav{
           width: 80%;
+     }
+     nav ul{
+           gap: 12px;
      }
      .contenedor{
           grid-template-areas: 
@@ -181,4 +264,58 @@ footer img{
      .foto{
           width: 80%;
      }
+
+     /*acerca de*/
+     .acerca-section{
+           padding: 50px 20px;
+            text-align: center;
+     }
+     .acerca-section h1{
+          font-size: 38px;
+          margin-bottom: 20px;
+     }
+     .acerca-contenido{
+          font-size: 16px;
+          margin-bottom: 40px;
+     }
+     .acerca-cards{
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+     }
+     .acerca-card{
+          width: 100%;
+          max-width: 320px;
+          padding: 20px;
+     }
+
+     /*musica*/
+     .musica{
+          padding: 50px 20px;
+          text-align: center;
+     }
+     .musica h1{
+          font-size: 38px;
+          margin-bottom: 15px;
+     }
+     .musica p{
+          font-size: 16px;
+          margin-bottom: 35px;
+     }
+     .spotify, .video{
+          padding: 20px;
+     }
+     .spotify iframe{
+          height: 300px;
+     }
+     .video-grid{
+          grid-template-columns: 1fr;
+          gap: 15px;
+     }
+     .video-grid iframe{
+          height: 190px;
+     }
 }
+
+
+
