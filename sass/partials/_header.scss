@@ -1,0 +1,36 @@
+@use "./variables" as*;
+
+header{
+    background-color: $negro;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    img{
+        width: 100px;
+        margin: 16px;
+    }
+    nav{
+        width:35%;
+        ul{
+            list-style: none;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin: 16px;
+            list-style: none;
+            a{
+                font-family: $font;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                color: $blanco;
+                text-decoration: none;
+                &:hover{
+                    color: $verde;
+                }
+            }
+        }
+    }
+}    

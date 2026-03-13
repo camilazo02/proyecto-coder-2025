@@ -1,0 +1,43 @@
+@use "../partials/variables" as*;
+
+main{
+    img{
+        width: 100%;
+    }
+    .contenedor{
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo"
+        "texto1 foto"
+        "foto2 texto2";
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 100px 250px 250px;
+        justify-content: center;
+        align-items: center;
+        justify-items: start;
+        column-gap: 15px;
+        row-gap: 10px;
+
+        .titulo{
+            grid-area: titulo;
+        }
+        .foto{
+            grid-area: foto;
+            width: 100%;
+            max-width: 400px;
+            justify-self: center;
+        }
+        .texto1{
+            grid-area: texto1;
+        }
+        .foto2{
+            grid-area: foto2;
+            width: 100%;
+            max-width: 250px;
+            justify-self: center;
+        }
+        .texto2{
+            grid-area: texto2;
+        }
+    }
+}
